@@ -1,0 +1,36 @@
+h1 {
+	color: beige;
+	font-size: 30px;
+	background-color: gray;
+	padding: 20px 0px 30px 0px;
+	margin: 0px 0px 0px 0px;
+	opacity: .3;
+	height: 35px;
+	border-style: round;
+
+	text-align: center;
+
+}
+
+p {
+	text-align: left;
+	margin: 5px;
+	font-family: verdana;
+	width: 350px;
+	height: 200px;
+	border: solid lightblue;
+	clear: right;
+
+}
+
+img {
+float: right;
+width: 200px;
+height: 200px;
+border: solid black;
+margin: 20px;
+}
+
+body{
+	background-color: lightblue;
+}

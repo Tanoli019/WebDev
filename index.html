@@ -8,31 +8,84 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
 </head>
 
 <!--THIS IS BODY AREA-->
 
-
+ 
 <body>
 
-<div class="hero-img"></div>
+   <div class="hero-img"></div>  <!--For adding main pic later on-->
 
-<div class="wrapper">
-    <header><a href="#" class="logo">Sacred<span>Web</span></a>
-        <nav>
+    <div class="wrapper"> <!--This is parent container-->
+
+<!--In the we are going to put two coulum 1- displaying logo on left 2- nav bar at right-->
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg class="close" viewBox="0 0 896 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M448 0C566.817 0 680.768 47.1999 764.784 131.216C848.8 215.232 896 329.183 896 448C896 566.817 848.8 680.768 764.784 764.784C680.768 848.8 566.817 896 448 896C329.183 896 215.232 848.8 131.216 764.784C47.1999 680.768 0 566.817 0 448C0 329.183 47.1999 215.232 131.216 131.216C215.232 47.1999 329.183 0 448 0V0ZM448 393.664L343.936 289.6C336.731 282.395 326.958 278.347 316.768 278.347C306.578 278.347 296.805 282.395 289.6 289.6C282.395 296.805 278.347 306.578 278.347 316.768C278.347 326.958 282.395 336.731 289.6 343.936L393.664 448L289.6 552.064C286.032 555.632 283.202 559.867 281.271 564.529C279.34 569.19 278.347 574.186 278.347 579.232C278.347 584.278 279.34 589.274 281.271 593.935C283.202 598.597 286.032 602.832 289.6 606.4C293.168 609.968 297.403 612.798 302.065 614.729C306.726 616.66 311.722 617.653 316.768 617.653C321.814 617.653 326.81 616.66 331.471 614.729C336.133 612.798 340.368 609.968 343.936 606.4L448 502.336L552.064 606.4C555.632 609.968 559.867 612.798 564.529 614.729C569.19 616.66 574.186 617.653 579.232 617.653C584.278 617.653 589.274 616.66 593.935 614.729C598.597 612.798 602.832 609.968 606.4 606.4C609.968 602.832 612.798 598.597 614.729 593.935C616.66 589.274 617.653 584.278 617.653 579.232C617.653 574.186 616.66 569.19 614.729 564.529C612.798 559.867 609.968 555.632 606.4 552.064L502.336 448L606.4 343.936C609.968 340.368 612.798 336.133 614.729 331.471C616.66 326.81 617.653 321.814 617.653 316.768C617.653 311.722 616.66 306.726 614.729 302.065C612.798 297.403 609.968 293.168 606.4 289.6C602.832 286.032 598.597 283.202 593.935 281.271C589.274 279.34 584.278 278.347 579.232 278.347C574.186 278.347 569.19 279.34 564.529 281.271C559.867 283.202 555.632 286.032 552.064 289.6L448 393.664Z" fill="black"/>
+                </svg>
               <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">Services</a></li>
-                   <li><a href="#">About</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About</a></li>
               </ul>
-              <svg  class="navButton" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
-              </svg>
+
+              
                 
-        </nav>
-    </header>
- </div>
+           </nav>
+
+           <svg  class="navButton" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+           </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence in the court</h1> 
+            <p class="subhead">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                commodi, facilis quisquam.
+            </p>   
+            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+           </svg>
+               
+      </section>
+
+      <section class="more-info">
+        <div class="features">
+            <div class="content">
+                <p class="title">Lighweight</p>
+                <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam quisquam quae, mollitia earum et.</p>
+            </div>
+            <img src="hoe2.jpg" alt="Nike shoes pic">
+        </div>
+
+        <div class="features left">
+            <div class="content">
+                <p class="title">Lighweight</p>
+                <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam quisquam quae, mollitia earum et.</p>
+            </div>
+            <img src="shoe2.jpg" alt="Nike shoes pic">
+        </div>
+
+        <div class="features">
+            <div class="content">
+                <p class="title">Lighweight</p>
+                <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam quisquam quae, mollitia earum et.</p>
+            </div>
+            <img src="shoe2.jpg" alt="Nike shoes pic">
+        </div>
+
+      </section>
+    </div>
+
+
     
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Html Forms</title>
+</head>
+<body>
+
+<form action="formResult.html" method="GET" enctype="multipart/form-data" class="email">
+	<div>
+		    <label for="name">Name</label>
+			<input type="text" name="Name" id="name" placeholder="usename" required>
+		
+	</div>
+
+	<div>
+		   <label for="email">Email</label>
+		   <input type="email" name="Email" id="email" required placeholder="email">
+	</div>
+
+	<div>
+		<label for="date">Birthday</label>
+		<input type="date" name="date" id="date">
+		
+
+	</div>
+
+	<div>
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" placeholder="age" required min="10" max="150" step="1">
+
+	</div>
+	<div>
+		Gender
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="Gender" id="male" value="male">
+		</div>
+		<div>
+			<label for="female">Female</label>
+			<input type="radio" name="Gender" id="female" value="female">
+		</div>
+	</div>
+
+	<div>
+	      <label for="password">Password </label>
+	      <input type="password" name="Password" id="password" placeholder="password" required>
+	    
+	</div>
+
+	<div>
+		<label for="eyeColour">Eye Color</label>
+		<select name="eyeColour" id="eyeColour">
+			<option label="Red" value="Red"></option>
+				<option value="Green" id="eyeColour">Green</option>
+			
+		</select>
+	</div>
+	<div>
+		Favourite Food
+		<div>
+			<label for="banana">Banana</label>
+			<input type="checkbox" name="banana" id="banana">
+		</div>
+		<div>
+			<label for="Apple">Apple</label>
+			<input type="checkbox" name="Apple" id="Apple">
+		</div>
+		<div>
+			<label for="orange">Orange</label>
+			<input type="checkbox" name="orange" id="orange">
+		</div>
+	</div>
+
+
+	<div>
+		<label for="bio">Bio</label>
+		<textarea id="bio" name="bio">My name is Faisal</textarea>
+	</div>
+
+
+	<div>
+		<label for="file">File</label>
+		<input type="file" name="file" id="file">
+
+	</div>
+
+	<div>
+		<label for="phone">Phone</label> 
+		<input type="tel" name="phone" id="phone">
+	</div>
+
+	<div>
+		<label for="url">Website</label>
+		<input type="url" name="url" id="url">
+	</div>
+
+
+	<button type="reset">Reset</button>
+
+	<button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

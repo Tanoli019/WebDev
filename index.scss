@@ -1,12 +1,6 @@
 body {
     margin: 1.5em;
     font-family: 'Poppins' , sans-serif;
-
-    a {
-        text-decoration: none;
-        font-size: 1.3rem;
-
-    }
 }
 
 .hero-img {
@@ -20,6 +14,7 @@ body {
     background-size: cover;
     background-position-x: 20%; 
     background-position-y: 20%; 
+    animation: InterLoad 2s forwards; 
     //overflow: hidden;
 }
 
@@ -51,7 +46,7 @@ ul {
         display: block;
 
         &:hover {
-            background-color: gray;
+            background-color: none;
         }
     }
 }
@@ -98,4 +93,166 @@ section.hero {
     margin: 2em;
     width: 2em;
     
+}
+
+.more-info {
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+
+    .desc {
+        line-height: 1.25rem;
+
+}
+
+}
+
+@media only screen and (min-width: 680px) {
+
+    body {
+        margin: 1.5em 5em;
+    }
+       
+}
+
+@media only screen and (min-width: 920px) {
+
+    .navButton {
+        display: none;
+        
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+
+        svg.close{
+            display: none;
+
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            a {
+                color: white;
+                padding: .5em 1.5em;
+                font-size: .9rem;
+                text-decoration: none;
+                background-color: none;
+            }
+
+          &:hover{
+            background: none;
+        text-decoration: underline;          }
+        }
+    }
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+        
+    }
+
+    .logo {
+        color: black;
+        span {
+            color: red;
+        }
+    }
+
+    section.hero {
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 8em;
+    svg.down-arrow {
+        color: black;
+        position: unset;
+        animation: downArrow 1s alternate-reverse infinite;
+
+        path {
+            fill: black;
+
+            
+        }
+    }
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+        margin-bottom: 8em;
+
+        img {
+            width: 25em;
+        }
+
+        .content {
+            text-align: right;
+            width: 25em;
+        }
+
+    }
+
+    .features.left {
+        grid-template-areas:
+        "left right";
+
+        img {
+            grid-area: left;
+        }
+         .content {
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+         }
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 1200px){
+
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
+@keyframes InterLoad {
+    from{
+        clip-path: polygon(20% 0%, 80% 0%, 96% 0, 5% 0);
+
+    }
+    to {
+        clip-path: polygon(0 3%, 100% 1%, 99% 100%, 0 100%);
+    }
+}
+
+@keyframes downArrow {
+    from{
+        transform: translateY(-30px)
+
+    }
+    to {
+        transform: translateY(0px)  
+    }
 }
